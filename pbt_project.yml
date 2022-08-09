@@ -1,0 +1,77 @@
+name: python-github
+description: ''
+version: 0.0.1
+author: maciej+demo6@prophecy.io
+language: python
+buildSystem: wheel
+pipelines:
+  pipelines/medium-pipeline:
+    name: medium-pipeline
+    description: ''
+    author: maciej+demo6@prophecy.io
+    mode: batch
+    language: python
+    createdAt: '2022-08-09 14:53:07'
+    datasets:
+      inputs:
+      - 2722/datasets/tpch_nations
+      - 2722/datasets/tpch_customers
+      - 2722/datasets/tpch_orders
+      - 2722/datasets/orders_per_nation
+      outputs:
+      - 2722/datasets/orders_per_nation
+    dependencies: {}
+datasets:
+  datasets/tpch_nations:
+    name: tpch_nations
+    description: ''
+    author: maciej+demo6@prophecy.io
+    createdAt: '2022-08-09 14:54:04'
+    physicalDatasets:
+      dev:
+        fabricId: 307
+        datasetType: File
+        description: ''
+        author: maciej+demo6@prophecy.io
+        createdAt: '2022-08-09 14:54:04'
+  datasets/tpch_customers:
+    name: tpch_customers
+    description: ''
+    author: maciej+demo6@prophecy.io
+    createdAt: '2022-08-09 14:54:38'
+    physicalDatasets:
+      dev:
+        fabricId: 307
+        datasetType: File
+        description: ''
+        author: maciej+demo6@prophecy.io
+        createdAt: '2022-08-09 14:54:38'
+  datasets/tpch_orders:
+    name: tpch_orders
+    description: ''
+    author: maciej+demo6@prophecy.io
+    createdAt: '2022-08-09 15:00:21'
+    physicalDatasets:
+      dev:
+        fabricId: 307
+        datasetType: File
+        description: ''
+        author: maciej+demo6@prophecy.io
+        createdAt: '2022-08-09 15:00:21'
+  datasets/orders_per_nation:
+    name: orders_per_nation
+    description: ''
+    author: maciej+demo6@prophecy.io
+    createdAt: '2022-08-09 15:13:54'
+    physicalDatasets:
+      dev:
+        fabricId: 307
+        datasetType: Database
+        description: ''
+        author: maciej+demo6@prophecy.io
+        createdAt: '2022-08-09 15:13:54'
+templates: {}
+jobs: {}
+libraries: []
+subgraphs: {}
+dependencies: []

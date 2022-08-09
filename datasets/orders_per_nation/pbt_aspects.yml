@@ -1,0 +1,20 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: c_nation_name
+    type: string
+    nullable: true
+    metadata: {}
+  - name: o_orderstatus
+    type: string
+    nullable: true
+    metadata: {}
+  - name: customers
+    type: long
+    nullable: false
+    metadata: {}
+  - name: orders
+    type: long
+    nullable: false
+    metadata: {}
