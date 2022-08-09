@@ -349,7 +349,7 @@
           "target" : "o_orderstatus",
           "expression" : {
             "format" : "sql",
-            "expression" : "o_orderstatus"
+            "expression" : "concat(o_orderstatus, '123')"
           },
           "description" : ""
         } ]
