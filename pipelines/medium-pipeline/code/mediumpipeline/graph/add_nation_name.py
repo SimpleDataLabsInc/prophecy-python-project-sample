@@ -9,5 +9,5 @@ def add_nation_name(spark: SparkSession, in0: DataFrame) -> DataFrame:
         col("c_custkey"), 
         lookup("nations", col("c_nationkey")).getField("n_name").alias("c_nation_name"), 
         col("o_orderkey"), 
-        concat(col("o_orderstatus"), lit("123")).alias("o_orderstatus")
+        concat(col("o_orderstatus"), col("o_orderkey"), lit(123)).alias("o_orderstatus")
     )
